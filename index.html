@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Wilyuhm.GitHub.io by wilyuhm</title>
+    <title>CS179 Group 2 Final Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,10 +11,28 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <script src="jquery-1.12.3.js"></script>
-    <script src="us-states.js"></script> 
+    <script src="us-states.js"></script>
+    <script src="hosp-per-state.js"></script>  
 
   <style>
     #map {
+      position: absolute;
+      width: 800px;
+      height: 500px;
+      top: 25%;
+      left: 25%;
+      margin: -100px 0 0 -150px;
+    }
+
+    #heading {
+      text-align: center;
+    }
+
+    #body {
+      background-color: lightblue;
+    }
+
+    #map2 {
       width: 800px;
       height: 500px;
     }
@@ -46,12 +64,12 @@
     }
   </style>
 </head>
-<body>
+<body id="body">
+<h1 id="heading">Map of Hospitals per State</h1>
   <div id="map"></div>
-
   <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
 
-  <script type="text/javascript" src="us-states.js"></script>
+  <script type="text/javascript" src="hosp-per-state.js"></script>
   <script type="text/javascript">
 
     var map = L.map('map').setView([37.8, -96], 4);
@@ -75,8 +93,8 @@
     };
 
     info.update = function (props) {
-      this._div.innerHTML = '<h4>US Population Density</h4>' +  (props ?
-        '<b>' + props.name + '</b><br />' + props.density + ' people / mi<sup>2</sup>'
+      this._div.innerHTML = '<h4>Number of Hospitals per State</h4>' +  (props ?
+        '<b>' + props.name + '</b><br />' + props.density + ' hospitals per state'
         : 'Hover over a state');
     };
 
