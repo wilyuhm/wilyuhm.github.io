@@ -170,4 +170,8 @@ var map = L.map('map').setView([37.8, -96], 4);
     return div;
   };
 
+<<<<<<< HEAD
   legend.addTo(map);
+=======
+  legend.addTo(map);
+>>>>>>> 33eeb3c1be147a498aeda8d75a45ea55dbfe6cb2

@@ -140,7 +140,11 @@ var map2 = L.map('map2').setView([37.8, -96], 4);
     });
   }
 
+<<<<<<< HEAD
+  geojson = L.geoJson(docspstData, {
+=======
   geojson = L.geoJson(hosppstData, {
+>>>>>>> 33eeb3c1be147a498aeda8d75a45ea55dbfe6cb2
     style: style,
     onEachFeature: onEachFeature
   }).addTo(map2);
@@ -153,7 +157,11 @@ var map2 = L.map('map2').setView([37.8, -96], 4);
   legend.onAdd = function (map2) {
 
     var div = L.DomUtil.create('div', 'info legend'),
+<<<<<<< HEAD
+      grades = [0, 1000, 2000, 5000, 10000, 20000, 50000, 100000],
+=======
       grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+>>>>>>> 33eeb3c1be147a498aeda8d75a45ea55dbfe6cb2
       labels = [],
       from, to;
 
