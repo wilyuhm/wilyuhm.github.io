@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <script src="jquery-1.12.3.js"></script>
     <script>
@@ -21,13 +20,71 @@
       OSM_URL = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       OSM_ATTRIB = '&copy; <a href="http://openstreetmap.org/copyright">OpenStreetMap</a> contributors';
     </script>
+      <style>
+    #map {
+      position: relative;
+      width: 800px;
+      height: 500px;
+    }
+    #heading {
+      position: relative
+      text-align: center;
+    }
+    #body {
+      background-color: lightblue;
+    }
+    #map2 {
+      position: relative;
+      width: 800px;
+      height: 500px;
+    }
     
+    #button-wrapper {
+    position: relative + 10px;
+    bottom: 10px;
+    width: 100%;
+    border: 1px solid red;
+    }
+    .btnStyle {
+      border-radius: 15px;
+      background-color: #4D90FE; 
+      background-image: -moz-linear-gradient(center top , #4D90FE, #4787ED); 
+      border: 1px solid #3079ED; 
+      color: #FFFFFF;
+      padding: 4px;
+      width:28%
+    }
+    .info {
+      padding: 6px 8px;
+      font: 14px/16px Arial, Helvetica, sans-serif;
+      background: white;
+      background: rgba(255,255,255,0.8);
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      border-radius: 5px;
+    }
+    .info h4 {
+      margin: 0 0 5px;
+      color: #777;
+    }
+    .legend {
+      text-align: left;
+      line-height: 18px;
+      color: #555;
+    }
+    .legend i {
+      width: 18px;
+      height: 18px;
+      float: left;
+      margin-right: 8px;
+      opacity: 0.7;
+    }
+  </style>
+
 </head>
 
 <body id="body">
   <h1 id="heading">Map of Hospitals per State</h1>
   <div id="map"></div>
-  <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
   <script type="text/javascript" src="hosp-per-state.js"></script>
 </body>
 
