@@ -9,7 +9,7 @@
 
     #heading {
       position: relative;
-      text-align: center;
+      text-align: left;
     }
 
     #body {
@@ -24,6 +24,13 @@
     }
 
     #map3 {
+      position: relative;
+      width: 1500px;
+      height: 1000px;
+      left: 10%;
+    }
+
+    #map4 {
       position: relative;
       width: 1500px;
       height: 1000px;
