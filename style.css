@@ -2,12 +2,13 @@
   <style>
     #map {
       position: relative;
-      width: 800px;
-      height: 500px;
+      width: 1500px;
+      height: 1000px;
+      left: 10%;
     }
 
     #heading {
-      position: relative
+      position: relative;
       text-align: center;
     }
 
@@ -17,8 +18,9 @@
 
     #map2 {
       position: relative;
-      width: 800px;
-      height: 500px;
+      width: 1500px;
+      height: 1000px;
+      left: 10%;
     }
     
     #button-wrapper {
