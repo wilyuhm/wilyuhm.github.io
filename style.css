@@ -12,6 +12,11 @@
       text-align: left;
     }
 
+    #heading2 {
+      position: relative;
+      text-align: center;
+    }
+
     #body {
       background-color: lightblue;
     }
