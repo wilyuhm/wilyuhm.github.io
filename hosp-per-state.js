@@ -169,3 +169,5 @@ var map = L.map('map').setView([37.8, -96], 4);
     div.innerHTML = labels.join('<br>');
     return div;
   };
+
+  legend.addTo(map);

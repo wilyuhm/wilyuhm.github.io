@@ -154,12 +154,13 @@ var map2 = L.map('map2').setView([37.8, -96], 4);
   legend.onAdd = function (map2) {
 
     var div = L.DomUtil.create('div', 'info legend'),
+    grades = [0, 1000, 2000, 5000, 10000, 20000, 50000, 100000],
 
       labels = [],
       from, to;
 
     for (var i = 0; i < grades.length; i++) {
-      from = grades[i];
+      from = grades[i]; 	 	
       to = grades[i + 1];
 
       labels.push(
