@@ -2,7 +2,7 @@ title: Wilyuhm.GitHub.io
 description: Webpage for projects
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 
 gems:
   - jekyll-mentions
